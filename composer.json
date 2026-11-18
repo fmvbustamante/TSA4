@@ -1,0 +1,14 @@
+{
+  "$schema":"https://getcomposer.org/schema.json",
+  "name":"student/tasks-for-today-tsa4",
+  "type":"project",
+  "description":"Laravel Tasks for Today CRUD, authentication, and email assessment.",
+  "keywords":["laravel","tasks","eloquent"],
+  "license":"MIT",
+  "require":{"php":"^8.3","laravel/framework":"^13.20","laravel/tinker":"^3.0"},
+  "require-dev":{"laravel/breeze":"^2.3"},
+  "autoload":{"psr-4":{"App\\":"app/","Database\\Factories\\":"database/factories/","Database\\Seeders\\":"database/seeders/"}},
+  "scripts":{"post-autoload-dump":["Illuminate\\Foundation\\ComposerScripts::postAutoloadDump","@php artisan package:discover --ansi"]},
+  "config":{"optimize-autoloader":true,"preferred-install":"dist","sort-packages":true,"allow-plugins":{"pestphp/pest-plugin":true,"php-http/discovery":true}},
+  "minimum-stability":"stable","prefer-stable":true
+}

@@ -1,0 +1,1 @@
+@extends('layouts.app') @section('title','Edit Task') @section('content')<header class="page-head"><div><h1 class="page-title">Edit task</h1><p class="page-intro">Update the task details or mark it done.</p></div></header>@include('tasks._form',['task'=>$task])@endsection

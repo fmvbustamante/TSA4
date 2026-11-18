@@ -1,0 +1,1 @@
+@extends('layouts.app') @section('title','Create Task') @section('content')<header class="page-head"><div><h1 class="page-title">Create task</h1><p class="page-intro">Add a task to your list.</p></div></header>@include('tasks._form',['task'=>null])@endsection
